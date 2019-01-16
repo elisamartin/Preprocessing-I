@@ -48,14 +48,28 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+
+//  Variables: Incorporate variables in your project for color and font stacks.
+
+@font-stack-arial: Arial, sans-serif;
+@font-stack-helvetica: Helvetica;
+
+@standar-white: white;
+@standar-grey: grey;
+@darker-grey: darkgrey;
+@lighter-grey: lightgrey;
+@magical-padding:  5% 2% 5% 2%;
+@small-padding: 2%;
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
+	font-family: @font-stack-helvetica;
 	font-size: 62.5%;
+	line-height: 1.2;
 }
 
 h1{
@@ -80,7 +94,7 @@ nav{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
+	padding: @small-padding;
 	a{
 		text-decoration: none;
 		color:black;
@@ -90,21 +104,19 @@ nav{
 
 .top-box{
 	width: 100%;
-	padding: 5% 2% 5% 2%; //magic padding
-	background-color: darkgray;
+	padding: @magical-padding;
+	background-color: @darker-grey;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
 	div{
 		width: 50%;
-		padding: 5% 2% 5% 2%; //magic padding
+		padding: @magical-padding;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		
 		p{
-			padding: 5% 2% 5% 2%; //magic padding
+			padding: @magical-padding;
 		}
 	}
 }
@@ -114,17 +126,16 @@ nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 5% 2% 5% 2%; //magic padding
+	padding: @magical-padding;
 	font-size: 1.6rem;
-
 	h3{
-		background-color: grey;
-		padding: 2%; //small padding
+		background-color: @standar-grey;
+		padding: @small-padding;
 		font-size: 2rem;
 	}
 	ul{
-		padding: 2%; //small padding
-		background-color: lightgrey;
+		padding: @small-padding;
+		background-color: @lighter-grey;
 	}
 }
 
@@ -133,16 +144,16 @@ nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 5% 2% 5% 2%; //magic padding
+	padding: @magical-padding;
 	font-size: 1.6rem;
 	h3{
-		background-color: grey;
-		padding: 2%; //small padding
+		background-color: @standar-grey;
+		padding: @small-padding;
 		font-size: 2rem;
 	}
 	ul{
-		padding: 2%; //small padding
-		background-color: lightgrey;
+		padding: @small-padding;
+		background-color: @lighter-grey;
 	}
 }
 
@@ -152,25 +163,22 @@ nav{
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 5%;
-
 	h4{
-		background-color: grey;
-		padding: 2%; //small padding
+		background-color: @standar-grey;
+		padding:@small-padding;
 		font-size: 1.8rem;
 	}
 	address{
 		text-align: center;
-		padding:  5% 2% 5% 2%; //magic padding
-		background-color: lightgrey;
+		padding: @magical-padding;
+		background-color: @lighter-grey;
 	}
-
 }
 
 footer{
-	width: 110%;
-	padding: 2%; //small padding
-	background-color: grey;
-	color: white;
+	width: 120%;
+	padding: @small-padding;
+	background-color: @standar-grey;
+	color: @standar-white;
 	text-align: center;
-
 }
