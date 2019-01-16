@@ -242,3 +242,24 @@ footer {
   color: white;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .container {
+    font-size: 1.3rem;
+  }
+  nav {
+    width: 90%;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+  .top-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-box .top-box-right {
+    width: 100%;
+  }
+  .top-box .top-box-right h1 {
+    text-align: center;
+  }
+}
