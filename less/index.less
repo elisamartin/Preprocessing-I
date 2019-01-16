@@ -221,11 +221,15 @@ header {
 	h3 {
 		background-color: @standar-grey;
 		padding: @small-padding;
-		font-size: 2rem;
+		font-size: 2.5rem;
+		font-family: @font-stack-google;
 	}
 	ul {
+		.flex-mixin(column, center);
 		padding: @small-padding;
 		background-color: @lighter-grey;
+		line-height: 1.8;
+		list-style-type: square;
 	}
 }
 .work-history {
@@ -236,11 +240,20 @@ header {
 	h3 {
 		background-color: @standar-grey;
 		padding: @small-padding;
-		font-size: 2rem;
+		font-size: 2.5rem;
+		font-family: @font-stack-google;
 	}
-	ul {
-		padding: @small-padding;
+	.work-lists {
+		.flex-mixin-just(row, space-around);
 		background-color: @lighter-grey;
+		ul {
+			padding: @small-padding;
+			.list-title {
+				font-size: 1.85rem;
+				font-weight: 520;
+				font-family: @font-stack-google;
+			}
+		}
 	}
 }
 .contact {

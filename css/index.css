@@ -200,11 +200,17 @@ header nav a {
 .skills h3 {
   background-color: grey;
   padding: 2%;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Acme', sans-serif;
 }
 .skills ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2%;
   background-color: lightgrey;
+  line-height: 1.8;
+  list-style-type: square;
 }
 .work-history {
   width: 100%;
@@ -217,11 +223,22 @@ header nav a {
 .work-history h3 {
   background-color: grey;
   padding: 2%;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Acme', sans-serif;
 }
-.work-history ul {
-  padding: 2%;
+.work-history .work-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: lightgrey;
+}
+.work-history .work-lists ul {
+  padding: 2%;
+}
+.work-history .work-lists ul .list-title {
+  font-size: 1.85rem;
+  font-weight: 520;
+  font-family: 'Acme', sans-serif;
 }
 .contact {
   width: 50%;
