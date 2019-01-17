@@ -1,1 +1,295 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: Helvetica;
+  font-size: 62.5%;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 4rem;
+  font-family: 'Acme', sans-serif;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2% 0 2% 0;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  padding: 0 3% 0 3%;
+}
+.top-box {
+  width: 100%;
+  padding: 5% 2% 5% 2%;
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.top-box img {
+  max-height: 330px;
+  padding-top: 5%;
+}
+.top-box div {
+  width: 50%;
+  padding: 5% 2% 5% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top-box div p {
+  padding: 5% 2% 5% 2%;
+}
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5% 2% 5% 2%;
+  font-size: 1.6rem;
+}
+.skills h3 {
+  background-color: grey;
+  padding: 2%;
+  font-size: 2.5rem;
+  font-family: 'Acme', sans-serif;
+}
+.skills ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  background-color: lightgrey;
+  line-height: 1.8;
+  list-style-type: square;
+}
+.work-history {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5% 2% 5% 2%;
+  font-size: 1.6rem;
+}
+.work-history h3 {
+  background-color: grey;
+  padding: 2%;
+  font-size: 2.5rem;
+  font-family: 'Acme', sans-serif;
+}
+.work-history .work-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: lightgrey;
+}
+.work-history .work-lists ul {
+  padding: 2%;
+}
+.work-history .work-lists ul .list-title {
+  font-size: 1.85rem;
+  font-weight: 520;
+  font-family: 'Acme', sans-serif;
+}
+.contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+}
+.contact h4 {
+  background-color: grey;
+  padding: 2%;
+  font-size: 1.8rem;
+}
+.contact address {
+  text-align: center;
+  padding: 5% 2% 5% 2%;
+  background-color: lightgrey;
+}
+footer {
+  max-width: 800px;
+  width: 100%;
+  padding: 2%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container {
+    font-size: 1.3rem;
+  }
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header nav a {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+  .top-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-box img {
+    padding: 0 10% 0 10%;
+  }
+  .top-box .top-box-right {
+    width: 100%;
+  }
+  .top-box .top-box-right h1 {
+    text-align: center;
+  }
+}
